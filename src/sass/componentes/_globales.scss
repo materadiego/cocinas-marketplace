@@ -1,0 +1,119 @@
+$color-primario: #000;
+$color-claro: #fff;
+$color-variacion: #f36826;
+$color-variacion2: #97979b;
+$color-footer: #231f20;
+$Fuente1: "Oswald", sans-serif;
+$Fuente2: "Signika", sans-serif;
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin line-lit {
+  display: flex;
+  width: 15px;
+  margin: 7px 0;
+  opacity: 0.7;
+  border-bottom: 1px solid $color-claro;
+  @include media(tablet) {
+    width: 25px;
+  }
+  @include media(desktop-s) {
+    width: 15px;
+    margin: 4px 0;
+  }
+}
+
+@mixin line-lit2 {
+  display: flex;
+  width: 15px;
+  margin: 0;
+  opacity: 0.7;
+  border-bottom: 1px solid $color-claro;
+  @include media(tablet) {
+    width: 25px;
+  }
+  @include media(desktop-s) {
+    width: 15px;
+  }
+}
+
+@mixin line-big {
+  border-bottom: 2px solid $color-claro;
+  display: flex;
+  width: 250px;
+  margin: 10px 0;
+  @include media(tablet) {
+    width: 450px;
+  }
+  @include media(desktop-s) {
+    width: 270px;
+    margin: 20px 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  position: relative;
+  background-color: $color-claro;
+  color: $color-primario;
+  @include media(mobile-l) {
+    font-size: 14px;
+  }
+  @include media(mobile-xl) {
+    font-size: 14px;
+  }
+  @include media(tablet) {
+    font-size: 16px;
+  }
+  &::-webkit-scrollbar {
+    width: 11px;
+    background: #222;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #4c4b4b;
+  }
+}
+
+img {
+  width: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 10px;
+
+  line-height: 110%;
+  font-family: $Fuente2;
+  color: $color-claro;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.desk {
+  display: none;
+  @include media(desktop-s) {
+    display: flex;
+  }
+}
+.mob {
+  @include media(desktop-s) {
+    display: none;
+  }
+}

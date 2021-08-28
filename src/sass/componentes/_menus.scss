@@ -1,0 +1,250 @@
+.menu {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+  opacity: 0;
+
+  transition: 0.3s ease-in-out;
+  pointer-events: none;
+  background-color: $color-primario;
+  @include media(desktop-s) {
+    width: 40%;
+    height: 100vh;
+
+    padding-left: 50px;
+    display: flex;
+    overflow: auto;
+  }
+
+  @include media(desktop-m) {
+    width: 35%;
+  }
+
+  &--precont {
+    width: 99.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    @include media(desktop-s) {
+      width: auto;
+      align-items: flex-start;
+      justify-content: space-between;
+      height: auto;
+      position: relative;
+    }
+    &::-webkit-scrollbar {
+      width: 4px;
+      background: #222;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #4c4b4b;
+    }
+    &--xmenu {
+      width: 50px;
+      height: 50px;
+      margin-top: 20px;
+      position: absolute;
+      left: 80%;
+      cursor: pointer;
+      background-image: url(../images/menu-x.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      @include media(mobile-xl) {
+        margin-top: 30px;
+      }
+      @include media(tablet) {
+        width: 70px;
+        height: 70px;
+        margin-top: 40px;
+      }
+      @include media(desktop-s) {
+        left: 0;
+        position: absolute;
+        margin-top: 50px;
+        width: 50px;
+        height: 50px;
+        z-index: 3;
+        margin-bottom: 0px;
+      }
+    }
+    &--logo {
+      width: 5.5em;
+      margin: 25px 0 40px;
+      @include media(mobile-xl) {
+        margin-top: 30px;
+      }
+      @include media(tablet) {
+        width: 8em;
+        margin: 40px 0 70px;
+      }
+      @include media(desktop-s) {
+        display: none;
+      }
+      & img {
+        width: 100%;
+      }
+    }
+    &--container {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: 20px auto 0;
+      @include media(mobile-xl) {
+        width: 60%;
+      }
+      @include media(desktop-s) {
+        width: 320px;
+        margin-top: 120px;
+
+        padding-right: 15px;
+
+        height: auto;
+      }
+      &--restaurantes {
+        cursor: pointer;
+
+        & p {
+          display: flex;
+          align-items: center;
+          margin: 0;
+          font-size: 1.5em;
+          letter-spacing: 1px;
+          color: $color-claro;
+          font-family: $Fuente2;
+          @include media(tablet) {
+            font-size: 2.5em;
+          }
+          @include media(desktop-s) {
+            font-size: 1.3em;
+          }
+          & img {
+            width: 40px;
+            transition: 0.3s;
+            @include media(tablet) {
+              width: 70px;
+            }
+            @include media(desktop-s) {
+              width: 40px;
+            }
+          }
+        }
+        &--in {
+          display: none;
+          flex-direction: column;
+          transition: 0.3s;
+          & a {
+            font-size: 1.4em;
+            text-decoration: none;
+            width: 100%;
+            padding-left: 15px;
+            margin: 5px 0;
+            color: $color-claro;
+            font-family: $Fuente2;
+            @include media(tablet) {
+              font-size: 2.5em;
+            }
+            @include media(desktop-s) {
+              font-size: 1.2em;
+            }
+          }
+        }
+      }
+      &--line {
+        @include line-big;
+      }
+      &--sesion {
+        display: flex;
+        flex-direction: column;
+        & a {
+          font-size: 1.6em;
+          margin: 5px 0;
+          font-family: $Fuente2;
+          color: $color-claro;
+          @include media(tablet) {
+            font-size: 2.5em;
+          }
+          @include media(desktop-s) {
+            font-size: 1.3em;
+          }
+        }
+      }
+      &--links {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        & a {
+          font-size: 1.6em;
+          margin: 5px 0;
+          font-family: $Fuente2;
+          color: $color-claro;
+          @include media(tablet) {
+            font-size: 2.5em;
+          }
+          @include media(desktop-s) {
+            font-size: 1.3em;
+          }
+        }
+      }
+    }
+    &--redes {
+      height: 70px;
+      width: 80%;
+      margin: 30px 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      @include media(mobile-xl) {
+        height: 90px;
+        width: 60%;
+        margin-top: 20px;
+      }
+      @include media(desktop-s) {
+        width: auto;
+        height: 50px;
+        margin: 20px 0;
+      }
+      &--img {
+        background-size: 100%;
+        width: 3em;
+        height: 3em;
+        margin: 0 10px;
+        @include media(tablet) {
+          width: 6em;
+          height: 6em;
+          margin: 0 20px;
+        }
+        @include media(desktop-s) {
+          width: 2em;
+          height: 2em;
+          margin: 0 15px;
+        }
+        &.fb {
+          background-image: url(../images/redes-fb-n.png);
+        }
+        &.ig {
+          background-image: url(../images/redes-ig-n.png);
+        }
+        &.wsp {
+          background-image: url(../images/redes-wsp-n.png);
+        }
+      }
+    }
+  }
+}
+.m-is-active {
+  display: flex;
+  opacity: 1;
+  pointer-events: all;
+  @include media(desktop-s) {
+    display: flex;
+  }
+}
+.despl-is-active {
+  display: flex;
+}
+.flecha-is-active {
+  transform: rotateX(180deg);
+}

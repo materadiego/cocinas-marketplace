@@ -1,0 +1,246 @@
+@import "_cocinas.scss";
+.section {
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  @include flex;
+  &--overlay {
+    position: absolute;
+    display: flex;
+    height: 25em;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: $color-variacion;
+    @include media(mobile-xl) {
+      height: 35em;
+    }
+    @include media(desktop-s) {
+      height: 28em;
+    }
+    @include media(desktop-m) {
+      height: 30em;
+    }
+  }
+  &--titlecontainer {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    height: 25em;
+    flex-direction: column;
+    @include flex;
+    @include media(mobile-xl) {
+      height: 35em;
+    }
+    @include media(desktop-s) {
+      justify-content: flex-start;
+      padding-top: 50px;
+      height: 23em;
+    }
+    @include media(desktop-m) {
+      height: 25em;
+      padding-top: 70px;
+    }
+    &--box {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+      margin: 15px 0;
+      align-items: center;
+      @include media(tablet) {
+        justify-content: center;
+      }
+      @include media(desktop-s) {
+        margin: 5px 0;
+      }
+      & h4 {
+        text-transform: uppercase;
+        width: 85%;
+        font-size: 2.4em;
+        margin: 0 auto 5px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-family: $Fuente1;
+        @include media(mobile-xl) {
+          font-size: 2.9em;
+          width: 70%;
+        }
+        @include media(tablet) {
+          width: 8.5em;
+          margin: 0 5px;
+        }
+        @include media(desktop-s) {
+          width: 48%;
+          display: flex;
+          margin: 0;
+          justify-content: flex-end;
+          text-align: end;
+          line-height: 130%;
+          font-size: 2.5em;
+        }
+      }
+      &--img-container {
+        display: flex;
+        width: 85%;
+        margin: 0 auto;
+        @include media(mobile-xl) {
+          width: 70%;
+        }
+        @include media(tablet) {
+          width: 14em;
+          margin: 0;
+        }
+        @include media(desktop-s) {
+          width: 48%;
+          padding-left: 20px;
+        }
+        &--img {
+          width: 4.6em;
+          height: 4.6em;
+          background-size: 125%;
+          background-position: center;
+          margin: 5px 10px 5px 0;
+          @include media(mobile-xl) {
+            width: 5.5em;
+            background-size: 120%;
+            background-repeat: no-repeat;
+          }
+          @include media(desktop-s) {
+            background-size: 80px;
+            margin: 0;
+          }
+
+          &.saludable {
+            background-image: url(../images/saludable.png);
+          }
+          &.glfree {
+            background-image: url(../images/gluten-free.png);
+          }
+          &.vegano {
+            background-image: url(../images/vegan.png);
+          }
+        }
+      }
+      &--img-container2 {
+        width: 30%;
+        background-image: url(../images/flecha-d1.png);
+        background-size: 140%;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: translateX(-20%);
+        height: 7em;
+        @include media(mobile-xl) {
+          height: 13em;
+          background-size: 150%;
+        }
+        @include media(tablet) {
+          transform: translateX(0);
+          background-size: 130%;
+          width: 25%;
+        }
+        @include media(desktop-s) {
+          background-size: 200px;
+          background-position: center right;
+          width: 48%;
+          height: 9em;
+          transform: translateX(20px);
+        }
+      }
+      & h5 {
+        font-size: 1.5em;
+        width: 52%;
+        margin: 0 0 0 -4%;
+        font-weight: 300;
+        @include media(mobile-xl) {
+          font-size: 2em;
+        }
+        @include media(tablet) {
+          margin: 0;
+        }
+        @include media(desktop-s) {
+          flex-direction: column;
+          width: 48%;
+          font-size: 1.5em;
+          padding-left: 40px;
+        }
+        & span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  &--container {
+    width: 95%;
+    flex-direction: column;
+    @include flex;
+    @include media(mobile-xl) {
+      width: 75%;
+    }
+    @include media(desktop-s) {
+      z-index: 2;
+      width: 80%;
+      padding-top: 20px;
+      margin-bottom: 50px;
+      background-color: $color-claro;
+    }
+    &--places {
+      position: relative;
+      width: 100%;
+      height: 9.17em;
+      margin-top: 40px;
+      font-size: 12px;
+      @include flex;
+      @include media(desktop-s) {
+      }
+      &--box {
+        height: 9.17em;
+        width: 25em;
+        background-image: url(../images/ubicacion.png);
+        background-size: 7.5em;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        & h6 {
+          text-align: center;
+          position: absolute;
+          top: 2.22em;
+          font-weight: 500;
+          font-size: 2em;
+          color: $color-variacion;
+        }
+      }
+    }
+    &--pronto {
+      margin: 20px 0 30px;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-evenly;
+      @include media(mobile-xl) {
+        justify-content: center;
+      }
+      @include media(desktop-s) {
+        margin: 30px 0 40px;
+      }
+      & img {
+        width: 5.83em;
+        @include media(mobile-xl) {
+          width: 6em;
+        }
+      }
+      & h6 {
+        margin: 2px 0px 0;
+        font-size: 1.2em;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-variacion2;
+        @include media(mobile-xl) {
+          margin: 3px 10px 0;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}

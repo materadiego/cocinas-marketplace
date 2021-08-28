@@ -1,0 +1,82 @@
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-top: 30px;
+  width: 100%;
+  @include media(tablet) {
+    margin-top: 50px;
+  }
+  &--menu {
+    background-image: url(../images/menu.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 80%;
+    @include media(tablet) {
+      width: 70px;
+      height: 70px;
+    }
+    @include media(desktop-s) {
+      left: 50px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+  &--logo {
+    width: 170px;
+    margin: 0;
+    @include media(mobile-l) {
+      width: 200px;
+    }
+    @include media(mobile-xl) {
+      width: 250px;
+    }
+    @include media(tablet) {
+      width: 300px;
+    }
+    &--img {
+      width: 100%;
+    }
+  }
+  &--sesion {
+    display: none;
+    @include media(desktop-s) {
+      display: flex;
+      position: absolute;
+      right: 5%;
+    }
+    &--iniciar {
+      text-decoration: none;
+      font-size: 1.3em;
+      font-weight: 300;
+
+      color: $color-claro;
+      font-family: $Fuente2;
+      &:hover {
+        color: $color-claro;
+      }
+    }
+    &--registro {
+      text-decoration: none;
+      font-size: 1.3em;
+      font-weight: 300;
+
+      color: $color-variacion;
+      font-family: $Fuente2;
+      &:hover {
+        color: $color-variacion;
+      }
+    }
+    &--line {
+      height: 2em;
+      margin: 0 20px;
+      border-left: 1px solid $color-variacion;
+    }
+  }
+}
