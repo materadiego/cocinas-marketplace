@@ -9,112 +9,135 @@
     flex-direction: row;
     justify-content: flex-start;
   }
-  &--box {
+  &--link {
     width: 100%;
     margin-bottom: 30px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @include media(tablet) {
-      margin-bottom: 100px;
-    }
     @include media(desktop-s) {
       width: 30%;
       margin: 0 1.66% 20px;
     }
-    &--bg {
-      width: 100%;
-      & img {
-        width: 100%;
-      }
+    @include media(tablet) {
+      margin-bottom: 50px;
     }
-    &--contenido {
+    &--box {
       width: 100%;
-      height: 130px;
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-      margin-top: 50px;
-      @include media(desktop-s) {
-        height: 110px;
+      @include media(tablet) {
       }
-      &--avatar {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        bottom: 130px;
-        border-radius: 50%;
-        overflow: hidden;
+      @include media(desktop-s) {
+        width: 100%;
+      }
+      &--bg {
+        width: 100%;
+        border-radius: 12px;
         @include media(desktop-s) {
-          width: 80px;
-          height: 80px;
+          overflow: hidden;
         }
         & img {
+          width: 100%;
+          transition: 0.3s;
+        }
+      }
+      &--contenido {
+        width: 100%;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 50px;
+        @include media(tablet) {
+          height: 180px;
+        }
+        @include media(desktop-s) {
+          height: 110px;
+        }
+        &--avatar {
           width: 100px;
           height: 100px;
-          margin: 0;
-          @include media(desktop-s) {
-            width: 80px;
-            height: 80px;
+          position: absolute;
+          bottom: 130px;
+          border-radius: 50%;
+          overflow: hidden;
+          @include media(tablet) {
+            bottom: 180px;
           }
-        }
-      }
-      & h1 {
-        font-size: 2.5em;
-        margin: 0;
-        text-align: center;
-        color: $color-primario;
-        @include media(desktop-s) {
-          font-size: 1.2em;
-          margin-top: 5px;
-        }
-      }
-      & h2 {
-        font-size: 1.4em;
-        font-weight: 300;
-        margin: 0;
-        text-align: center;
-        color: $color-primario;
-        @include media(desktop-s) {
-          font-size: 0.9em;
-          font-weight: 400;
-        }
-      }
-      &--atributos {
-        width: 9.8em;
-        height: 5.5em;
-        margin-left: 20px;
-        @include media(desktop-s) {
-          display: flex;
-          width: 100%;
-          height: 3em;
-          margin: 0;
-          justify-content: center;
-        }
-        &--box {
-          width: 100%;
-          margin-top: 7px;
-          display: flex;
-          align-items: center;
           @include media(desktop-s) {
-            width: auto;
-            margin: 7px 3px 0;
+            width: 90px;
+            height: 90px;
+            bottom: 110px;
           }
           & img {
-            width: 25px;
-            height: 25px;
-          }
-          & p {
+            width: 100px;
+            height: 100px;
             margin: 0;
-            font-size: 1.4em;
-            color: $color-variacion2;
             @include media(desktop-s) {
-              font-size: 0.9em;
+              width: 90px;
+              height: 90px;
             }
           }
         }
+        & h1 {
+          font-size: 2.5em;
+          margin: 0;
+          text-align: center;
+          color: $color-primario;
+          @include media(desktop-s) {
+            font-size: 1.2em;
+            margin-top: 5px;
+          }
+        }
+        & h2 {
+          font-size: 1.4em;
+          font-weight: 300;
+          margin: 0;
+          text-align: center;
+          color: $color-primario;
+          @include media(desktop-s) {
+            font-size: 0.9em;
+            font-weight: 400;
+          }
+        }
+        &--atributos {
+          width: 9.8em;
+          height: 5.5em;
+          margin-left: 20px;
+          @include media(desktop-s) {
+            display: flex;
+            width: 100%;
+            height: 3em;
+            margin: 0;
+            justify-content: center;
+          }
+          &--box {
+            width: 100%;
+            margin-top: 7px;
+            display: flex;
+            align-items: center;
+            @include media(desktop-s) {
+              width: auto;
+              margin: 7px 3px 0;
+            }
+            & img {
+              width: 25px;
+              height: 25px;
+            }
+            & p {
+              margin: 0;
+              font-size: 1.4em;
+              color: $color-variacion2;
+              @include media(desktop-s) {
+                font-size: 0.9em;
+              }
+            }
+          }
+        }
+      }
+      &:hover .section--container--cocinas--link--box--bg img {
+        transform: scale(1.05);
       }
     }
   }

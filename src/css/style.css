@@ -946,34 +946,19 @@ a:hover {
       -webkit-box-pack: start;
       -ms-flex-pack: start;
       justify-content: flex-start; } }
-  .section--container--cocinas--box {
+  .section--container--cocinas--link {
     width: 100%;
-    margin-bottom: 30px;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    @media only screen and (min-width: 768px) {
-      .section--container--cocinas--box {
-        margin-bottom: 100px; } }
+    margin-bottom: 30px; }
     @media only screen and (min-width: 992px) {
-      .section--container--cocinas--box {
+      .section--container--cocinas--link {
         width: 30%;
         margin: 0 1.66% 20px; } }
-    .section--container--cocinas--box--bg {
-      width: 100%; }
-      .section--container--cocinas--box--bg img {
-        width: 100%; }
-    .section--container--cocinas--box--contenido {
+    @media only screen and (min-width: 768px) {
+      .section--container--cocinas--link {
+        margin-bottom: 50px; } }
+    .section--container--cocinas--link--box {
       width: 100%;
-      height: 130px;
+      position: relative;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -983,90 +968,128 @@ a:hover {
       flex-direction: column;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: start;
-      -ms-flex-pack: start;
-      justify-content: flex-start;
-      margin-top: 50px; }
+      align-items: center; }
       @media only screen and (min-width: 992px) {
-        .section--container--cocinas--box--contenido {
-          height: 110px; } }
-      .section--container--cocinas--box--contenido--avatar {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        bottom: 130px;
-        border-radius: 50%;
-        overflow: hidden; }
+        .section--container--cocinas--link--box {
+          width: 100%; } }
+      .section--container--cocinas--link--box--bg {
+        width: 100%;
+        border-radius: 12px; }
         @media only screen and (min-width: 992px) {
-          .section--container--cocinas--box--contenido--avatar {
-            width: 80px;
-            height: 80px; } }
-        .section--container--cocinas--box--contenido--avatar img {
+          .section--container--cocinas--link--box--bg {
+            overflow: hidden; } }
+        .section--container--cocinas--link--box--bg img {
+          width: 100%;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+      .section--container--cocinas--link--box--contenido {
+        width: 100%;
+        height: 130px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        margin-top: 50px; }
+        @media only screen and (min-width: 768px) {
+          .section--container--cocinas--link--box--contenido {
+            height: 180px; } }
+        @media only screen and (min-width: 992px) {
+          .section--container--cocinas--link--box--contenido {
+            height: 110px; } }
+        .section--container--cocinas--link--box--contenido--avatar {
           width: 100px;
           height: 100px;
-          margin: 0; }
+          position: absolute;
+          bottom: 130px;
+          border-radius: 50%;
+          overflow: hidden; }
+          @media only screen and (min-width: 768px) {
+            .section--container--cocinas--link--box--contenido--avatar {
+              bottom: 180px; } }
           @media only screen and (min-width: 992px) {
-            .section--container--cocinas--box--contenido--avatar img {
-              width: 80px;
-              height: 80px; } }
-      .section--container--cocinas--box--contenido h1 {
-        font-size: 2.5em;
-        margin: 0;
-        text-align: center;
-        color: #000; }
-        @media only screen and (min-width: 992px) {
-          .section--container--cocinas--box--contenido h1 {
-            font-size: 1.2em;
-            margin-top: 5px; } }
-      .section--container--cocinas--box--contenido h2 {
-        font-size: 1.4em;
-        font-weight: 300;
-        margin: 0;
-        text-align: center;
-        color: #000; }
-        @media only screen and (min-width: 992px) {
-          .section--container--cocinas--box--contenido h2 {
-            font-size: 0.9em;
-            font-weight: 400; } }
-      .section--container--cocinas--box--contenido--atributos {
-        width: 9.8em;
-        height: 5.5em;
-        margin-left: 20px; }
-        @media only screen and (min-width: 992px) {
-          .section--container--cocinas--box--contenido--atributos {
+            .section--container--cocinas--link--box--contenido--avatar {
+              width: 90px;
+              height: 90px;
+              bottom: 110px; } }
+          .section--container--cocinas--link--box--contenido--avatar img {
+            width: 100px;
+            height: 100px;
+            margin: 0; }
+            @media only screen and (min-width: 992px) {
+              .section--container--cocinas--link--box--contenido--avatar img {
+                width: 90px;
+                height: 90px; } }
+        .section--container--cocinas--link--box--contenido h1 {
+          font-size: 2.5em;
+          margin: 0;
+          text-align: center;
+          color: #000; }
+          @media only screen and (min-width: 992px) {
+            .section--container--cocinas--link--box--contenido h1 {
+              font-size: 1.2em;
+              margin-top: 5px; } }
+        .section--container--cocinas--link--box--contenido h2 {
+          font-size: 1.4em;
+          font-weight: 300;
+          margin: 0;
+          text-align: center;
+          color: #000; }
+          @media only screen and (min-width: 992px) {
+            .section--container--cocinas--link--box--contenido h2 {
+              font-size: 0.9em;
+              font-weight: 400; } }
+        .section--container--cocinas--link--box--contenido--atributos {
+          width: 9.8em;
+          height: 5.5em;
+          margin-left: 20px; }
+          @media only screen and (min-width: 992px) {
+            .section--container--cocinas--link--box--contenido--atributos {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              width: 100%;
+              height: 3em;
+              margin: 0;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center; } }
+          .section--container--cocinas--link--box--contenido--atributos--box {
+            width: 100%;
+            margin-top: 7px;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            width: 100%;
-            height: 3em;
-            margin: 0;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center; } }
-        .section--container--cocinas--box--contenido--atributos--box {
-          width: 100%;
-          margin-top: 7px;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center; }
-          @media only screen and (min-width: 992px) {
-            .section--container--cocinas--box--contenido--atributos--box {
-              width: auto;
-              margin: 7px 3px 0; } }
-          .section--container--cocinas--box--contenido--atributos--box img {
-            width: 25px;
-            height: 25px; }
-          .section--container--cocinas--box--contenido--atributos--box p {
-            margin: 0;
-            font-size: 1.4em;
-            color: #97979b; }
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
             @media only screen and (min-width: 992px) {
-              .section--container--cocinas--box--contenido--atributos--box p {
-                font-size: 0.9em; } }
+              .section--container--cocinas--link--box--contenido--atributos--box {
+                width: auto;
+                margin: 7px 3px 0; } }
+            .section--container--cocinas--link--box--contenido--atributos--box img {
+              width: 25px;
+              height: 25px; }
+            .section--container--cocinas--link--box--contenido--atributos--box p {
+              margin: 0;
+              font-size: 1.4em;
+              color: #97979b; }
+              @media only screen and (min-width: 992px) {
+                .section--container--cocinas--link--box--contenido--atributos--box p {
+                  font-size: 0.9em; } }
+      .section--container--cocinas--link--box:hover .section--container--cocinas--link--box--bg img {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05); }
 
 .section {
   position: relative;
@@ -1418,7 +1441,7 @@ a:hover {
         width: 85%; } }
     .footer--container--minimenu {
       margin-bottom: 30px;
-      width: 80%; }
+      width: 90%; }
       @media only screen and (min-width: 992px) {
         .footer--container--minimenu {
           margin: 0;
@@ -1428,7 +1451,7 @@ a:hover {
           z-index: 2; } }
       .footer--container--minimenu a {
         text-decoration: none;
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-weight: 300;
         opacity: 0.7;
         -webkit-transition: 0.3s;
@@ -1480,7 +1503,7 @@ a:hover {
         width: 15em; }
     .footer--container--contacto {
       margin-bottom: 20px;
-      width: 80%; }
+      width: 90%; }
       @media only screen and (min-width: 992px) {
         .footer--container--contacto {
           width: auto;

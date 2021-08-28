@@ -2,53 +2,55 @@ mixin places(place)
   .section--container--places--box 
     h6=place
 
-mixin cocinas-g-v(imagen,avatar,titulo,subtitulo)
-  .section--container--cocinas--box 
-    .section--container--cocinas--box--bg: img(src="src/images/"+imagen, alt="")
-    .section--container--cocinas--box--contenido 
-      .section--container--cocinas--box--contenido--avatar: img(src="src/images/"+avatar, alt="")
-      h1=titulo
-      h2=subtitulo
-      .section--container--cocinas--box--contenido--atributos 
-        .section--container--cocinas--box--contenido--atributos--box 
-          img(src="src/images/gluten-free2.png", alt="gluten-free", class="gluten-img")
-          p Gluten free
-        .section--container--cocinas--box--contenido--atributos--box
-          img(src="src/images/vegan2.png", alt="vegano", class="vegan-img")
-          p Vegano
+mixin cocinas-g-v(link,imagen,avatar,titulo,subtitulo)
+  a(href=link, class="section--container--cocinas--link")
+    .section--container--cocinas--link--box 
+      .section--container--cocinas--link--box--bg: img(src="src/images/"+imagen, alt="")
+      .section--container--cocinas--link--box--contenido 
+        .section--container--cocinas--link--box--contenido--avatar: img(src="src/images/"+avatar, alt="")
+        h1=titulo
+        h2=subtitulo
+        .section--container--cocinas--link--box--contenido--atributos 
+          .section--container--cocinas--link--box--contenido--atributos--box 
+            img(src="src/images/gluten-free2.png", alt="gluten-free", class="gluten-img")
+            p Gluten free
+          .section--container--cocinas--link--box--contenido--atributos--box
+            img(src="src/images/vegan2.png", alt="vegano", class="vegan-img")
+            p Vegano
 
-mixin cocinas-g(imagen,avatar,titulo,subtitulo)
-  .section--container--cocinas--box 
-    .section--container--cocinas--box--bg: img(src="src/images/"+imagen, alt="")
-    .section--container--cocinas--box--contenido 
-      .section--container--cocinas--box--contenido--avatar: img(src="src/images/"+avatar, alt="")
-      h1=titulo
-      h2=subtitulo
-      .section--container--cocinas--box--contenido--atributos 
-        .section--container--cocinas--box--contenido--atributos--box 
-          img(src="src/images/gluten-free2.png", alt="gluten-free", class="gluten-img")
-          p Gluten free
+mixin cocinas-g(link,imagen,avatar,titulo,subtitulo)
+  a(href=link, class="section--container--cocinas--link")
+    .section--container--cocinas--link--box 
+      .section--container--cocinas--link--box--bg: img(src="src/images/"+imagen, alt="")
+      .section--container--cocinas--link--box--contenido 
+        .section--container--cocinas--link--box--contenido--avatar: img(src="src/images/"+avatar, alt="")
+        h1=titulo
+        h2=subtitulo
+        .section--container--cocinas--link--box--contenido--atributos 
+          .section--container--cocinas--link--box--contenido--atributos--box 
+            img(src="src/images/gluten-free2.png", alt="gluten-free", class="gluten-img")
+            p Gluten free
 
-mixin cocinas-v(imagen,avatar,titulo,subtitulo)
-  .section--container--cocinas--box 
-    .section--container--cocinas--box--bg: img(src="src/images/"+imagen, alt="")
-    .section--container--cocinas--box--contenido 
-      .section--container--cocinas--box--contenido--avatar: img(src="src/images/"+avatar, alt="")
-      h1=titulo
-      h2=subtitulo
-      .section--container--cocinas--box--contenido--atributos 
-        .section--container--cocinas--box--contenido--atributos--box 
-          img(src="src/images/vegan2.png", alt="vegano", class="vegan-img")
-          p Vegano
+mixin cocinas-v(link,imagen,avatar,titulo,subtitulo)
+  a(href=link, class="section--container--cocinas--link") 
+    .section--container--cocinas--link--box 
+      .section--container--cocinas--link--box--bg: img(src="src/images/"+imagen, alt="")
+      .section--container--cocinas--link--box--contenido 
+        .section--container--cocinas--link--box--contenido--avatar: img(src="src/images/"+avatar, alt="")
+        h1=titulo
+        h2=subtitulo
+        .section--container--cocinas--link--box--contenido--atributos 
+          .section--container--cocinas--link--box--contenido--atributos--box 
+            img(src="src/images/vegan2.png", alt="vegano", class="vegan-img")
+            p Vegano
 
-mixin cocinas(imagen,avatar,titulo,subtitulo)
-  .section--container--cocinas--box 
-    .section--container--cocinas--box--bg: img(src="src/images/"+imagen, alt="")
-    .section--container--cocinas--box--contenido 
-      .section--container--cocinas--box--contenido--avatar: img(src="src/images/"+avatar, alt="")
-      h1=titulo
-      h2=subtitulo
-      .section--container--cocinas--box--contenido--atributos 
-        .section--container--cocinas--box--contenido--atributos--box 
-          
-        
+mixin cocinas(link,imagen,avatar,titulo,subtitulo)
+  a(href=link, class="section--container--cocinas--link") 
+    .section--container--cocinas--link--box 
+      .section--container--cocinas--link--box--bg: img(src="src/images/"+imagen, alt="")
+      .section--container--cocinas--link--box--contenido 
+        .section--container--cocinas--link--box--contenido--avatar: img(src="src/images/"+avatar, alt="")
+        h1=titulo
+        h2=subtitulo
+        .section--container--cocinas--link--box--contenido--atributos 
+          .section--container--cocinas--link--box--contenido--atributos--box 
