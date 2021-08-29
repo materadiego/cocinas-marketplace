@@ -137,7 +137,9 @@
         }
       }
       &:hover .section--container--cocinas--link--box--bg img {
-        transform: scale(1.05);
+        @include media(desktop-s) {
+          transform: scale(1.05);
+        }
       }
     }
   }

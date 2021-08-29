@@ -1,7 +1,8 @@
 .footer {
   height: inherit;
   padding-bottom: 30px;
-  background-color: $color-footer;
+  position: relative;
+  background: $color-footer;
   @include flex;
   @include media(desktop-s) {
     padding: 60px 0;
@@ -12,6 +13,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 120px;
+    background: $color-footer;
     @include media(desktop-s) {
       flex-direction: row;
       align-items: center;

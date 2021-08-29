@@ -444,7 +444,8 @@ a:hover {
   align-items: center;
   height: 50px;
   margin-top: 30px;
-  width: 100%; }
+  width: 100%;
+  z-index: 2; }
   @media only screen and (min-width: 768px) {
     .header {
       margin-top: 50px; } }
@@ -510,15 +511,48 @@ a:hover {
       margin: 0 20px;
       border-left: 1px solid #f36826; }
 
+.bg-hero {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  background-image: url(../images/hero-m.webp);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center top; }
+
+@media only screen and (min-width: 380px) {
+  background-size: 120%;
+  max-height: 800px;
+  min-height: 560;
+  background-position: center bottom; }
+
+@media only screen and (min-width: 480px) {
+  background-size: 100%; }
+
+@media only screen and (min-width: 768px) {
+  background-position: center;
+  max-height: 1024px;
+  min-height: 750px; }
+
+@media only screen and (min-width: 992px) {
+  background-image: url(../images/hero.webp);
+  background-size: 155%;
+  max-height: 720px;
+  min-height: 580px; }
+
+@media only screen and (min-width: 1200px) {
+  background-size: 105%;
+  max-height: 720px;
+  min-height: 580px; }
+
 .hero {
   width: 100%;
   height: 100vh;
   max-height: 670px;
   min-height: 510px;
-  background-image: url(../images/hero-m.webp);
-  background-size: 120%;
-  background-repeat: no-repeat;
-  background-position: center top;
+  z-index: 1;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,7 +604,8 @@ a:hover {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 130px; }
+    padding-top: 130px;
+    z-index: 1; }
     @media only screen and (min-width: 768px) {
       .hero--container {
         max-height: 1024px;
@@ -1086,10 +1121,11 @@ a:hover {
               @media only screen and (min-width: 992px) {
                 .section--container--cocinas--link--box--contenido--atributos--box p {
                   font-size: 0.9em; } }
-      .section--container--cocinas--link--box:hover .section--container--cocinas--link--box--bg img {
-        -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        transform: scale(1.05); }
+      @media only screen and (min-width: 992px) {
+        .section--container--cocinas--link--box:hover .section--container--cocinas--link--box--bg img {
+          -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          transform: scale(1.05); } }
 
 .section {
   position: relative;
@@ -1098,6 +1134,7 @@ a:hover {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1277,7 +1314,7 @@ a:hover {
             transform: translateX(20px); } }
       .section--titlecontainer--box h5 {
         font-size: 1.5em;
-        width: 52%;
+        width: auto;
         margin: 0 0 0 -4%;
         font-weight: 300; }
         @media only screen and (min-width: 480px) {
@@ -1396,7 +1433,8 @@ a:hover {
 .footer {
   height: inherit;
   padding-bottom: 30px;
-  background-color: #231f20;
+  position: relative;
+  background: #231f20;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1421,7 +1459,8 @@ a:hover {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 120px; }
+    padding-top: 120px;
+    background: #231f20; }
     @media only screen and (min-width: 992px) {
       .footer--container {
         -webkit-box-orient: horizontal;
