@@ -56,22 +56,26 @@
       text-decoration: none;
       font-size: 1.3em;
       font-weight: 300;
-
+      transition: 0.2s;
       color: $color-claro;
       font-family: $Fuente2;
       &:hover {
-        color: $color-claro;
+        @include media(desktop-s) {
+          color: $color-variacion;
+        }
       }
     }
     &--registro {
       text-decoration: none;
       font-size: 1.3em;
       font-weight: 300;
-
+      transition: 0.2s;
       color: $color-variacion;
       font-family: $Fuente2;
       &:hover {
-        color: $color-variacion;
+        @include media(desktop-s) {
+          color: $color-claro;
+        }
       }
     }
     &--line {

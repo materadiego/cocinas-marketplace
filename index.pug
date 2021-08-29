@@ -3,9 +3,15 @@ doctype html
 html
   include src/pug/head.pug 
   body 
-    include src/pug/menu.pug
-    include src/pug/header.pug
-    include src/pug/hero.pug
-    include src/pug/section.pug
-    include src/pug/footer.pug
-    script(src="src/js/menu.js") 
+    .loader
+      .loader--load 
+      img(src="src/images/fav.png", alt="").loader--logo 
+    .content 
+      include src/pug/menu.pug
+      include src/pug/header.pug
+      include src/pug/hero.pug
+      include src/pug/section.pug
+      include src/pug/footer.pug
+    script(src="src/js/menu.js")
+    script(src="src/js/load.js")
+    script(src="src/js/scroll-animation.js")  
