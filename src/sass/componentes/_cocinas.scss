@@ -130,7 +130,9 @@
             align-items: center;
             @include media(desktop-s) {
               width: auto;
-              margin: 7px 3px 0;
+              margin: 7px 5px 0;
+              transition: 0.2s;
+              opacity: 0.7;
             }
             & img {
               width: 25px;
@@ -144,12 +146,17 @@
                 font-size: 0.9em;
               }
             }
+            &:hover {
+              @include media(desktop-s) {
+                opacity: 1;
+              }
+            }
           }
         }
       }
       &:hover {
         @include media(desktop-s) {
-          box-shadow: 0 2px 25px 0 rgba($color-primario, $alpha: 0.15);
+          box-shadow: 0 2px 15px 0 rgba($color-primario, $alpha: 0.15);
         }
       }
       &:hover .section--container--cocinas--link--box--bg img {
