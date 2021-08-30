@@ -10,6 +10,8 @@
   @include media(tablet) {
     margin-top: 50px;
   }
+  @include media(desktop-l) {
+  }
   &--menu {
     background-image: url(../images/menu.png);
     width: 50px;
@@ -27,6 +29,9 @@
       left: 50px;
       width: 50px;
       height: 50px;
+    }
+    @include media(desktop-xl) {
+      left: 80px;
     }
   }
   &--logo {
@@ -51,6 +56,9 @@
       display: flex;
       position: absolute;
       right: 5%;
+    }
+    @include media(desktop-m) {
+      right: 80px;
     }
     &--iniciar {
       text-decoration: none;

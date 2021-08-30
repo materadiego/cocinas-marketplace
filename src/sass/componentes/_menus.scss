@@ -21,6 +21,9 @@
   @include media(desktop-m) {
     width: 35%;
   }
+  @include media(desktop-xl) {
+    padding-left: 80px;
+  }
 
   &--precont {
     width: 99.5%;

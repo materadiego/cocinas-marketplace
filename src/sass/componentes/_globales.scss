@@ -76,6 +76,9 @@ body {
   @include media(tablet) {
     font-size: 16px;
   }
+  @include media(desktop-xl) {
+    font-size: 20px;
+  }
   &::-webkit-scrollbar {
     width: 11px;
     background: #222;

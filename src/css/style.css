@@ -396,6 +396,9 @@ body {
   @media only screen and (min-width: 768px) {
     body {
       font-size: 16px; } }
+  @media only screen and (min-width: 1780px) {
+    body {
+      font-size: 20px; } }
   body::-webkit-scrollbar {
     width: 11px;
     background: #222; }
@@ -534,6 +537,9 @@ a:hover {
         left: 50px;
         width: 50px;
         height: 50px; } }
+    @media only screen and (min-width: 1780px) {
+      .header--menu {
+        left: 80px; } }
   .header--logo {
     width: 170px;
     margin: 0; }
@@ -557,6 +563,9 @@ a:hover {
         display: flex;
         position: absolute;
         right: 5%; } }
+    @media only screen and (min-width: 1200px) {
+      .header--sesion {
+        right: 80px; } }
     .header--sesion--iniciar {
       text-decoration: none;
       font-size: 1.3em;
@@ -838,6 +847,9 @@ a:hover {
   @media only screen and (min-width: 1200px) {
     .menu {
       width: 35%; } }
+  @media only screen and (min-width: 1780px) {
+    .menu {
+      padding-left: 80px; } }
   .menu--precont {
     width: 99.5%;
     display: -webkit-box;
@@ -1231,6 +1243,9 @@ a:hover {
         @media only screen and (min-width: 992px) {
           .section--container--cocinas--link--box--contenido {
             height: 110px; } }
+        @media only screen and (min-width: 1780px) {
+          .section--container--cocinas--link--box--contenido {
+            height: 120px; } }
         .section--container--cocinas--link--box--contenido--avatar {
           width: 100px;
           height: 100px;
@@ -1246,6 +1261,9 @@ a:hover {
               width: 90px;
               height: 90px;
               bottom: 120px; } }
+          @media only screen and (min-width: 1780px) {
+            .section--container--cocinas--link--box--contenido--avatar {
+              bottom: 130px; } }
           .section--container--cocinas--link--box--contenido--avatar img {
             width: 100px;
             height: 100px;

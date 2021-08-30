@@ -60,6 +60,9 @@
         @include media(desktop-s) {
           height: 110px;
         }
+        @include media(desktop-xl) {
+          height: 120px;
+        }
         &--avatar {
           width: 100px;
           height: 100px;
@@ -74,6 +77,9 @@
             width: 90px;
             height: 90px;
             bottom: 120px;
+          }
+          @include media(desktop-xl) {
+            bottom: 130px;
           }
           & img {
             width: 100px;
