@@ -1313,8 +1313,8 @@ a:hover {
                   font-size: 0.9em; } }
       @media only screen and (min-width: 992px) {
         .section--container--cocinas--link--box:hover {
-          -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3); } }
+          -webkit-box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.15); } }
       @media only screen and (min-width: 992px) {
         .section--container--cocinas--link--box:hover .section--container--cocinas--link--box--bg img {
           -webkit-transform: scale(1.1);

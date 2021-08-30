@@ -143,7 +143,7 @@
       }
       &:hover {
         @include media(desktop-s) {
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 25px 0 rgba($color-primario, $alpha: 0.15);
         }
       }
       &:hover .section--container--cocinas--link--box--bg img {
