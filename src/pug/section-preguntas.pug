@@ -1,0 +1,55 @@
+.section-preguntas  
+  .section-preguntas--container 
+    .section-preguntas--container--subcontainer
+      .section-preguntas--container--subcontainer--preguntas.como-pedir 
+        p.t2 ¿Cómo pedir?  
+        img(src="src/images/flecha-preguntas.png", alt="", class="flecha-preguntas2")
+        .section-preguntas--container--subcontainer--preguntas--resp.como-pedir-resp 
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nihil repellat placeat, exercitationem aliquid sint et voluptatem mollitia tempore maiores
+      .section-preguntas--container--subcontainer--line 
+      .section-preguntas--container--subcontainer--preguntas.zonas 
+        p.t1 ¿En qué zonas operamos?  
+        img(src="src/images/flecha-preguntas.png", alt="", class="flecha-preguntas1")
+        .section-preguntas--container--subcontainer--preguntas--resp.zonas-resp 
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nihil repellat placeat, exercitationem aliquid sint et voluptatem mollitia tempore maiores
+      .section-preguntas--container--subcontainer--line 
+      .section-preguntas--container--subcontainer--preguntas.donde-esta 
+        p.t3 ¿Dónde está mi pedido?  
+        img(src="src/images/flecha-preguntas.png", alt="", class="flecha-preguntas3")
+        .section-preguntas--container--subcontainer--preguntas--resp.donde-esta-resp 
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nihil repellat placeat, exercitationem aliquid sint et voluptatem mollitia tempore maiores
+          
+      .section-preguntas--container--subcontainer--line 
+      .section-preguntas--container--subcontainer--preguntas.puedo-retirar
+        p.t4 ¿Puedo retirar mi pedido?  
+        img(src="src/images/flecha-preguntas.png", alt="", class="flecha-preguntas4")
+        .section-preguntas--container--subcontainer--preguntas--resp.puedo-retirar-resp 
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nihil repellat placeat, exercitationem aliquid sint et voluptatem mollitia tempore maiores
+          
+      .section-preguntas--container--subcontainer--line 
+      .section-preguntas--container--subcontainer--preguntas.medios-pago  
+        p.t5 ¿Cúales son los medios de pago? 
+        img(src="src/images/flecha-preguntas.png", alt="", class="flecha-preguntas5")
+        .section-preguntas--container--subcontainer--preguntas--resp.medios-pago-resp 
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nihil repellat placeat, exercitationem aliquid sint et voluptatem mollitia tempore maiores
+          
+      .section-preguntas--container--subcontainer--line 
+      .section-preguntas--container--subcontainer--preguntas.sumar-restaurante 
+        p.t6 ¿Puedo sumar mi restaurante? 
+        img(src="src/images/flecha-preguntas.png", alt="", class="flecha-preguntas6")
+        .section-preguntas--container--subcontainer--preguntas--resp.sumar-restaurante-resp 
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nihil repellat placeat, exercitationem aliquid sint et voluptatem mollitia tempore maiores
+          
+      .section-preguntas--container--subcontainer--line 
+.contacto#contacto
+  .contacto--container 
+    h5 Contacto 
+    img(src="src/images/miscelanea-naranja.png", alt="")
+    form(action="enviar.php",method="post", class="contacto--container--form")
+      input(type="text", name="nombre", id="nombre", required, maxlength="100", placeholder="Nombre del restaurante", class="contacto--container--form--input")
+      input(type="text", name="email", id="email", required, maxlength="100", placeholder="Email", class="contacto--container--form--input")
+      input(type="text", name="telefono", id="telefono", required, maxlength="100", placeholder="Teléfono", class="contacto--container--form--input")
+      input(type="text", name="departamente", id="departamento", required, maxlength="100", placeholder="Departamento", class="contacto--container--form--input")
+      input(type="text", name="donde", id="donde", required, maxlength="100",placeholder="¿Dónde te gustaría tener tu cocina?",  class="contacto--container--form--input2")
+      textarea(name="mensaje", id="mensaje", required, maxlength="2000", placeholder="Comentario")
+      button(type="submit") enviar

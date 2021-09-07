@@ -266,3 +266,229 @@
     }
   }
 }
+
+// Seccion preguntas frecuentes
+
+.section-preguntas {
+  position: relative;
+  z-index: 2;
+  color: $color-primario;
+  background-color: $color-claro;
+  @include flex;
+  &--container {
+    width: 85%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    @include media(mobile-xl) {
+      width: 75%;
+    }
+    @include media(desktop-s) {
+      padding-top: 100px;
+    }
+    @include media(desktop-m) {
+      width: 60%;
+    }
+    &--subcontainer {
+      &--line {
+        @include line-preguntas;
+      }
+      &--preguntas {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        & p {
+          font-size: 1.4em;
+          margin: 0;
+          font-weight: 500;
+          transition: 0.2s;
+          font-family: $Fuente2;
+        }
+        & img {
+          width: 20px;
+          margin: 0 5px 0 0;
+          transition: 0.1s;
+        }
+        &--resp {
+          margin-top: 10px;
+          display: none;
+          width: 100%;
+          & p {
+            font-size: 1.2em;
+            font-weight: 400;
+            margin: 10px 0;
+            font-family: $Fuente2;
+            color: $color-variacion2;
+            @include media(desktop-s) {
+              margin: 15px 0 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.contacto {
+  position: relative;
+  background-image: url(../images/section-preguntas.webp);
+  width: 100%;
+  background-size: 130%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 150px;
+  background-color: $color-claro;
+  @include flex;
+  @include media(mobile-xl) {
+    background-size: 110%;
+    padding-bottom: 200px;
+  }
+  @include media(desktop-s) {
+    background-size: 100%;
+    padding-top: 170px;
+    padding-bottom: 400px;
+  }
+  &--container {
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-claro;
+    @include media(mobile-xl) {
+      width: 80%;
+    }
+    @include media(desktop-s) {
+      width: 70%;
+      padding-top: 0;
+      padding-bottom: 50px;
+    }
+
+    & h5 {
+      font-size: 1.7em;
+      margin: 0 0 5px;
+      color: $color-variacion;
+    }
+    & img {
+      width: 90px;
+      margin: 0;
+    }
+    &--form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      width: 95%;
+      @include media(desktop-s) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 75%;
+      }
+      @include media(desktop-m) {
+        width: 60%;
+      }
+      &--input {
+        width: 100%;
+        font-size: 1.1em;
+        padding: 10px 15px;
+        font-weight: 400;
+        margin: 5px 0;
+        border-radius: 0;
+        outline: none;
+        border: 2px solid $color-variacion;
+        @include media(desktop-s) {
+          width: 49%;
+          margin: 10px 0;
+        }
+        &::placeholder {
+          font-weight: 300;
+          font-family: $Fuente2;
+          color: $color-primario;
+        }
+      }
+      &--input2 {
+        width: 100%;
+        font-size: 1.1em;
+        padding: 10px 15px;
+        font-weight: 400;
+        margin: 5px 0;
+        border-radius: 0;
+        outline: none;
+        border: 2px solid $color-variacion;
+        @include media(desktop-s) {
+          width: 100%;
+          margin: 10px 0;
+        }
+        &::placeholder {
+          font-weight: 300;
+          font-family: $Fuente2;
+          color: $color-primario;
+        }
+      }
+      & textarea {
+        width: 100%;
+        font-size: 1.1em;
+        padding: 10px 15px;
+        font-weight: 400;
+        margin: 5px 0;
+        border-radius: 0;
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 70px;
+        min-height: 70px;
+        overflow: auto;
+
+        border: 2px solid $color-variacion;
+        @include media(desktop-s) {
+          width: 100%;
+          max-height: 90px;
+          min-height: 90px;
+          margin: 10px 0;
+        }
+        &::placeholder {
+          font-weight: 300;
+          font-family: $Fuente2;
+          color: $color-primario;
+        }
+      }
+      & button {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.4em;
+        height: 40px;
+        width: 120px;
+        margin-top: 20px;
+        transition: 0.2s;
+        cursor: pointer;
+        border: none;
+        font-family: $Fuente2;
+        color: $color-claro;
+        background-color: $color-variacion;
+        @include media(desktop-s) {
+          margin: 40px auto 0;
+          width: 150px;
+        }
+        &:hover {
+          background-color: $color-primario;
+          color: $color-variacion;
+        }
+      }
+    }
+  }
+}
+
+.p-is-active {
+  display: flex;
+}
+
+.text-is-active {
+  color: $color-variacion;
+}
+
+.flechap-is-active {
+  transform: rotateZ(90deg);
+}

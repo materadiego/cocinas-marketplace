@@ -384,6 +384,8 @@ body {
   margin: 0;
   padding: 0;
   font-size: 12px;
+  max-width: 1800px;
+  margin: 0 auto;
   position: relative;
   background-color: #000;
   color: #000; }
@@ -422,6 +424,7 @@ h6 {
 .loader {
   width: 100vw;
   height: 100vh;
+  max-width: 1800px;
   overflow: hidden;
   position: absolute;
   display: -webkit-box;
@@ -599,6 +602,7 @@ a:hover {
   position: fixed;
   width: 100%;
   height: 100vh;
+  max-width: 1800px;
   z-index: 0;
   background-image: url(../images/hero-m.webp);
   background-size: 120%;
@@ -823,6 +827,116 @@ a:hover {
       .hero--container--button:hover figure {
         background-image: url(../images/flecha-naranja.png); }
 
+.bg-hero-preguntas {
+  position: fixed;
+  width: 100%;
+  max-width: 1800px;
+  height: 350px;
+  z-index: 0;
+  background-image: url(../images/hero-preguntasm.webp);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
+  @media only screen and (min-width: 480px) {
+    .bg-hero-preguntas {
+      height: 500px;
+      background-size: 102%; } }
+  @media only screen and (min-width: 992px) {
+    .bg-hero-preguntas {
+      background-image: url(../images/hero-preguntas.webp);
+      background-size: 130%;
+      height: 410px; } }
+  @media only screen and (min-width: 1200px) {
+    .bg-hero-preguntas {
+      background-size: 110%;
+      height: 450px; } }
+
+.hero-preguntas {
+  width: 100%;
+  max-width: 1800px;
+  height: 350px;
+  z-index: 1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media only screen and (min-width: 480px) {
+    .hero-preguntas {
+      height: 500px; } }
+  @media only screen and (min-width: 992px) {
+    .hero-preguntas {
+      height: 410px; } }
+  @media only screen and (min-width: 1200px) {
+    .hero-preguntas {
+      height: 450px; } }
+  .hero-preguntas--container {
+    width: 90%;
+    height: 350px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media only screen and (min-width: 480px) {
+      .hero-preguntas--container {
+        height: 500px; } }
+    @media only screen and (min-width: 992px) {
+      .hero-preguntas--container {
+        height: 410px; } }
+    @media only screen and (min-width: 1200px) {
+      .hero-preguntas--container {
+        height: 450px; } }
+    .hero-preguntas--container--title {
+      font-size: 3.5em;
+      font-weight: 400;
+      margin: 20px 0 0;
+      text-align: center;
+      -webkit-animation-name: carga;
+      animation-name: carga;
+      opacity: 0;
+      animation-name: carga;
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-delay: 0.2s;
+      animation-delay: 0.2s;
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      font-family: "Oswald", sans-serif; }
+    .hero-preguntas--container--img {
+      margin: 20px 0 0;
+      width: 150px;
+      opacity: 0;
+      -webkit-animation-name: carga;
+      animation-name: carga;
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-delay: 0.35s;
+      animation-delay: 0.35s;
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in; }
+      @media only screen and (min-width: 480px) {
+        .hero-preguntas--container--img {
+          width: 230px; } }
+
 .menu {
   position: fixed;
   margin: 0;
@@ -849,7 +963,8 @@ a:hover {
       width: 35%; } }
   @media only screen and (min-width: 1780px) {
     .menu {
-      padding-left: 80px; } }
+      padding-left: 80px;
+      margin-left: -10px; } }
   .menu--precont {
     width: 99.5%;
     display: -webkit-box;
@@ -971,7 +1086,7 @@ a:hover {
             margin-left: 5px; }
             @media only screen and (min-width: 768px) {
               .menu--precont--container--restaurantes p img {
-                width: 70px; } }
+                width: 40px; } }
             @media only screen and (min-width: 992px) {
               .menu--precont--container--restaurantes p img {
                 width: 25px;
@@ -1675,11 +1790,300 @@ a:hover {
             margin: 3px 10px 0;
             font-size: 1.2em; } }
 
+.section-preguntas {
+  position: relative;
+  z-index: 2;
+  color: #000;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .section-preguntas--container {
+    width: 85%;
+    padding-top: 50px;
+    padding-bottom: 10px; }
+    @media only screen and (min-width: 480px) {
+      .section-preguntas--container {
+        width: 75%; } }
+    @media only screen and (min-width: 992px) {
+      .section-preguntas--container {
+        padding-top: 100px; } }
+    @media only screen and (min-width: 1200px) {
+      .section-preguntas--container {
+        width: 60%; } }
+    .section-preguntas--container--subcontainer--line {
+      border-bottom: 2px solid #97979b;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      margin: 15px 0; }
+    .section-preguntas--container--subcontainer--preguntas {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      cursor: pointer; }
+      .section-preguntas--container--subcontainer--preguntas p {
+        font-size: 1.4em;
+        margin: 0;
+        font-weight: 500;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
+        font-family: "Signika", sans-serif; }
+      .section-preguntas--container--subcontainer--preguntas img {
+        width: 20px;
+        margin: 0 5px 0 0;
+        -webkit-transition: 0.1s;
+        -o-transition: 0.1s;
+        transition: 0.1s; }
+      .section-preguntas--container--subcontainer--preguntas--resp {
+        margin-top: 10px;
+        display: none;
+        width: 100%; }
+        .section-preguntas--container--subcontainer--preguntas--resp p {
+          font-size: 1.2em;
+          font-weight: 400;
+          margin: 10px 0;
+          font-family: "Signika", sans-serif;
+          color: #97979b; }
+          @media only screen and (min-width: 992px) {
+            .section-preguntas--container--subcontainer--preguntas--resp p {
+              margin: 15px 0 30px; } }
+
+.contacto {
+  position: relative;
+  background-image: url(../images/section-preguntas.webp);
+  width: 100%;
+  background-size: 130%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 150px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media only screen and (min-width: 480px) {
+    .contacto {
+      background-size: 110%;
+      padding-bottom: 200px; } }
+  @media only screen and (min-width: 992px) {
+    .contacto {
+      background-size: 100%;
+      padding-top: 170px;
+      padding-bottom: 400px; } }
+  .contacto--container {
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff; }
+    @media only screen and (min-width: 480px) {
+      .contacto--container {
+        width: 80%; } }
+    @media only screen and (min-width: 992px) {
+      .contacto--container {
+        width: 70%;
+        padding-top: 0;
+        padding-bottom: 50px; } }
+    .contacto--container h5 {
+      font-size: 1.7em;
+      margin: 0 0 5px;
+      color: #f36826; }
+    .contacto--container img {
+      width: 90px;
+      margin: 0; }
+    .contacto--container--form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-top: 20px;
+      width: 95%; }
+      @media only screen and (min-width: 992px) {
+        .contacto--container--form {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          width: 75%; } }
+      @media only screen and (min-width: 1200px) {
+        .contacto--container--form {
+          width: 60%; } }
+      .contacto--container--form--input {
+        width: 100%;
+        font-size: 1.1em;
+        padding: 10px 15px;
+        font-weight: 400;
+        margin: 5px 0;
+        border-radius: 0;
+        outline: none;
+        border: 2px solid #f36826; }
+        @media only screen and (min-width: 992px) {
+          .contacto--container--form--input {
+            width: 49%;
+            margin: 10px 0; } }
+        .contacto--container--form--input::-webkit-input-placeholder {
+          font-weight: 300;
+          font-family: "Signika", sans-serif;
+          color: #000; }
+        .contacto--container--form--input:-ms-input-placeholder {
+          font-weight: 300;
+          font-family: "Signika", sans-serif;
+          color: #000; }
+        .contacto--container--form--input::-ms-input-placeholder {
+          font-weight: 300;
+          font-family: "Signika", sans-serif;
+          color: #000; }
+        .contacto--container--form--input::placeholder {
+          font-weight: 300;
+          font-family: "Signika", sans-serif;
+          color: #000; }
+      .contacto--container--form--input2 {
+        width: 100%;
+        font-size: 1.1em;
+        padding: 10px 15px;
+        font-weight: 400;
+        margin: 5px 0;
+        border-radius: 0;
+        outline: none;
+        border: 2px solid #f36826; }
+        @media only screen and (min-width: 992px) {
+          .contacto--container--form--input2 {
+            width: 100%;
+            margin: 10px 0; } }
+        .contacto--container--form--input2::-webkit-input-placeholder {
+          font-weight: 300;
+          font-family: "Signika", sans-serif;
+          color: #000; }
+        .contacto--container--form--input2:-ms-input-placeholder {
+          font-weight: 300;
+          font-family: "Signika", sans-serif;
+          color: #000; }
+        .contacto--container--form--input2::-ms-input-placeholder {
+          font-weight: 300;
+          font-family: "Signika", sans-serif;
+          color: #000; }
+        .contacto--container--form--input2::placeholder {
+          font-weight: 300;
+          font-family: "Signika", sans-serif;
+          color: #000; }
+      .contacto--container--form textarea {
+        width: 100%;
+        font-size: 1.1em;
+        padding: 10px 15px;
+        font-weight: 400;
+        margin: 5px 0;
+        border-radius: 0;
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 70px;
+        min-height: 70px;
+        overflow: auto;
+        border: 2px solid #f36826; }
+        @media only screen and (min-width: 992px) {
+          .contacto--container--form textarea {
+            width: 100%;
+            max-height: 90px;
+            min-height: 90px;
+            margin: 10px 0; } }
+        .contacto--container--form textarea::-webkit-input-placeholder {
+          font-weight: 300;
+          font-family: "Signika", sans-serif;
+          color: #000; }
+        .contacto--container--form textarea:-ms-input-placeholder {
+          font-weight: 300;
+          font-family: "Signika", sans-serif;
+          color: #000; }
+        .contacto--container--form textarea::-ms-input-placeholder {
+          font-weight: 300;
+          font-family: "Signika", sans-serif;
+          color: #000; }
+        .contacto--container--form textarea::placeholder {
+          font-weight: 300;
+          font-family: "Signika", sans-serif;
+          color: #000; }
+      .contacto--container--form button {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.4em;
+        height: 40px;
+        width: 120px;
+        margin-top: 20px;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
+        cursor: pointer;
+        border: none;
+        font-family: "Signika", sans-serif;
+        color: #fff;
+        background-color: #f36826; }
+        @media only screen and (min-width: 992px) {
+          .contacto--container--form button {
+            margin: 40px auto 0;
+            width: 150px; } }
+        .contacto--container--form button:hover {
+          background-color: #000;
+          color: #f36826; }
+
+.p-is-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.text-is-active {
+  color: #f36826; }
+
+.flechap-is-active {
+  -webkit-transform: rotateZ(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotateZ(90deg); }
+
 .footer {
   height: inherit;
   padding-bottom: 30px;
   position: relative;
-  background: #231f20;
+  background: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1691,7 +2095,8 @@ a:hover {
   align-items: center; }
   @media only screen and (min-width: 992px) {
     .footer {
-      padding: 60px 0; } }
+      padding: 60px 0;
+      background: #231f20; } }
   .footer--container {
     position: relative;
     display: -webkit-box;
@@ -1705,7 +2110,7 @@ a:hover {
     -ms-flex-align: center;
     align-items: center;
     padding-top: 120px;
-    background: #231f20; }
+    background: #000; }
     @media only screen and (min-width: 992px) {
       .footer--container {
         -webkit-box-orient: horizontal;
@@ -1719,7 +2124,8 @@ a:hover {
         -ms-flex-pack: end;
         justify-content: flex-end;
         padding: 0;
-        width: 90%; } }
+        width: 90%;
+        background: #231f20; } }
     @media only screen and (min-width: 1200px) {
       .footer--container {
         width: 85%; } }

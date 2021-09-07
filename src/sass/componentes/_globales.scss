@@ -55,6 +55,13 @@ $Fuente2: "Signika", sans-serif;
   }
 }
 
+@mixin line-preguntas {
+  border-bottom: 2px solid $color-variacion2;
+  display: flex;
+  width: 100%;
+  margin: 15px 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -64,6 +71,8 @@ body {
   margin: 0;
   padding: 0;
   font-size: 12px;
+  max-width: 1800px;
+  margin: 0 auto;
   position: relative;
   background-color: $color-primario;
   color: $color-primario;
@@ -108,7 +117,7 @@ h6 {
 .loader {
   width: 100vw;
   height: 100vh;
-
+  max-width: 1800px;
   overflow: hidden;
   position: absolute;
   display: flex;

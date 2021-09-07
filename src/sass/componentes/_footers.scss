@@ -2,10 +2,11 @@
   height: inherit;
   padding-bottom: 30px;
   position: relative;
-  background: $color-footer;
+  background: $color-primario;
   @include flex;
   @include media(desktop-s) {
     padding: 60px 0;
+    background: $color-footer;
   }
   &--container {
     position: relative;
@@ -13,13 +14,14 @@
     flex-direction: column;
     align-items: center;
     padding-top: 120px;
-    background: $color-footer;
+    background: $color-primario;
     @include media(desktop-s) {
       flex-direction: row;
       align-items: center;
       justify-content: flex-end;
       padding: 0;
       width: 90%;
+      background: $color-footer;
     }
     @include media(desktop-m) {
       width: 85%;

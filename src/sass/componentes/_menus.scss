@@ -23,6 +23,7 @@
   }
   @include media(desktop-xl) {
     padding-left: 80px;
+    margin-left: -10px;
   }
 
   &--precont {
@@ -129,7 +130,7 @@
             transition: 0.3s;
             margin-left: 5px;
             @include media(tablet) {
-              width: 70px;
+              width: 40px;
             }
             @include media(desktop-s) {
               width: 25px;
