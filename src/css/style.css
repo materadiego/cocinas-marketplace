@@ -1958,6 +1958,7 @@ a:hover {
         margin: 5px 0;
         border-radius: 0;
         outline: none;
+        font-family: "Signika", sans-serif;
         border: 2px solid #f36826; }
         @media only screen and (min-width: 992px) {
           .contacto--container--form--input {
@@ -1987,6 +1988,7 @@ a:hover {
         margin: 5px 0;
         border-radius: 0;
         outline: none;
+        font-family: "Signika", sans-serif;
         border: 2px solid #f36826; }
         @media only screen and (min-width: 992px) {
           .contacto--container--form--input2 {
@@ -2020,6 +2022,7 @@ a:hover {
         max-height: 70px;
         min-height: 70px;
         overflow: auto;
+        font-family: "Signika", sans-serif;
         border: 2px solid #f36826; }
         @media only screen and (min-width: 992px) {
           .contacto--container--form textarea {

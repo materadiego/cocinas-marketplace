@@ -399,6 +399,7 @@
         margin: 5px 0;
         border-radius: 0;
         outline: none;
+        font-family: $Fuente2;
         border: 2px solid $color-variacion;
         @include media(desktop-s) {
           width: 49%;
@@ -418,6 +419,8 @@
         margin: 5px 0;
         border-radius: 0;
         outline: none;
+        font-family: $Fuente2;
+
         border: 2px solid $color-variacion;
         @include media(desktop-s) {
           width: 100%;
@@ -441,6 +444,7 @@
         max-height: 70px;
         min-height: 70px;
         overflow: auto;
+        font-family: $Fuente2;
 
         border: 2px solid $color-variacion;
         @include media(desktop-s) {
